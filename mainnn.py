@@ -1,4 +1,4 @@
-import phys as phys
+
 from random import random
 from kivymd.app import MDApp
 from kivy.uix.widget import Widget
@@ -21,27 +21,27 @@ Builder.load_string("""
         id:start
         text: "start"
         pos_hint: {"center_x": 0.5, "center_y": 0.75}
-        font_name: "Georgia"
+        
         on_release: root.manager.current= 'dvizhuha'
         md_bg_color: app.theme_cls.primary_light
 
     MDFillRoundFlatButton:
         id: set1
         text: "settings"
-        font_name: "Georgia"
+        
         pos_hint: {"center_x": 0.5, "center_y": 0.6}
         on_release: root.manager.current= 'settings'
 
     MDFillRoundFlatButton:
         id: task
         text: "tasks"
-        font_name: "Georgia"
+        
         pos_hint: {"center_x": 0.5, "center_y": 0.45}
         on_release: root.manager.current= 'tasks'
     MDFillRoundFlatIconButton:
         id: exit
         icon: "exit-to-app"
-        font_name: "Georgia"
+        
         md_bg_color: app.theme_cls.primary_dark
         pos_hint: {"center_x": 0.5, "center_y": 0.3}
         on_release: app.stop()
@@ -69,22 +69,22 @@ Builder.load_string("""
                     id: x_y
                     text: 'x, y : 100 = 1 a. u (149*10^9 m)'
                     pos_hint: {"center_x": 0.5, "center_y": 0.60}
-                    font_name: "Georgia"
+                  
                 MDLabel:
                     id: vx_vy
                     text: 'vx, vy : 1 = 1 m/s'
                     pos_hint: {"center_x": 0.5, "center_y": 0.55}
-                    font_name: "Georgia"
+                   
                 MDLabel:
                     id: m_s
                     text: 'm: 1 = 10^ 24 kg'
                     pos_hint: {"center_x": 0.5, "center_y": 0.50}
-                    font_name: "Georgia"
+                   
                 MDLabel:
                     id: q_s
                     text: 'q: 1= 10^18 C'
                     pos_hint: {"center_x": 0.5, "center_y": 0.45}
-                    font_name: "Georgia"
+                   
         MDSwiperItem:
             MDRelativeLayout:
                 orientation: 'vertical'
@@ -93,12 +93,12 @@ Builder.load_string("""
                     text: 'Task 1'
                     pos_hint: {"center_x": 0.5, "center_y": 0.7}
                     font_size: 20
-                    font_name: "Georgia"
+                   
                 MDLabel:
                     id: task1
                     text: 'Place 2 oppositely charged objects on the screen. Add object 3 so as to avoid collision 1 and 2.'
                     pos_hint: {"center_x": 0.5, "center_y": 0.60}
-                    font_name: "Georgia"
+                  
         MDSwiperItem:
             MDRelativeLayout:
                 orientation: 'vertical'
@@ -107,12 +107,12 @@ Builder.load_string("""
                     text: 'Task 2'
                     pos_hint: {"center_x": 0.5, "center_y": 0.7}
                     font_size: 20
-                    font_name: "Georgia"
+                    
                 MDLabel:
                     id: task2
                     text: 'Create a system from a massive object and 3 objects revolving around it.'
                     pos_hint: {"center_x": 0.5, "center_y": 0.60}
-                    font_name: "Georgia"
+                    
         MDSwiperItem:
             MDRelativeLayout:
                 orientation: 'vertical'
@@ -121,12 +121,12 @@ Builder.load_string("""
                     text: 'Task 3'
                     pos_hint: {"center_x": 0.5, "center_y": 0.7}
                     font_size: 20
-                    font_name: "Georgia"
+                
                 MDLabel:
                     id: task3
                     text: 'Create 2 objects so that body 2 rotates around body 1, with one of the bodies moving along the x-axis and the other moving along the y-axis. Next, add 3 stationary objects that will pull both.'
                     pos_hint: {"center_x": 0.5, "center_y": 0.60}
-                    font_name: "Georgia"
+                  
         MDSwiperItem:
             MDRelativeLayout:
                 orientation: 'vertical'
@@ -135,12 +135,12 @@ Builder.load_string("""
                     text: 'Task 4'
                     pos_hint: {"center_x": 0.5, "center_y": 0.7}
                     font_size: 20
-                    font_name: "Georgia"
+                
                 MDLabel:
                     id: task4
                     text: 'Place 2 opposite charges on the same diagonal. They must not pulled each other. You can add two extra objects.'
                     pos_hint: {"center_x": 0.5, "center_y": 0.60}
-                    font_name: "Georgia"
+                  
 
         MDSwiperItem:
             MDRelativeLayout:
@@ -150,18 +150,18 @@ Builder.load_string("""
                     text: 'Task 5'
                     pos_hint: {"center_x": 0.5, "center_y": 0.7}
                     font_size: 20
-                    font_name: "Georgia"
+                  
                 MDLabel:
                     id: task5
                     text: 'Place 3 bodies with a small mass at the bottom of the screen. In the upper part, place the body with more mass. The velocities of the bodies are 0. Without moving the objects, make the first three objects be pulled to the larger one.'
                     pos_hint: {"center_x": 0.5, "center_y": 0.60}
-                    font_name: "Georgia"
+                 
     MDRelativeLayout:
     MDFillRoundFlatIconButton:
         id: back_tasks
         text: "back"
         icon: "arrow-left-bold-circle"
-        font_name: "Georgia"
+ 
         md_bg_color: app.theme_cls.primary_dark
         pos_hint: {"center_x": 0.9, "center_y": 0.1}
         on_release: root.manager.current= 'first'
@@ -170,13 +170,13 @@ Builder.load_string("""
     MDFillRoundFlatButton:
         id: create
         text: "create"
-        font_name: "Georgia"
+       
         pos_hint: {"center_x": 0.15, "center_y": 0.05}
         on_release: on_release: root.open()
     MDFillRoundFlatButton:
         id: clearb
         text: "clear"
-        font_name: "Georgia"
+      
         pos_hint: {"center_x": 0.5, "center_y": 0.05}
         on_release: root.child.clear()
     MDFillRoundFlatIconButton:
@@ -184,7 +184,7 @@ Builder.load_string("""
         icon: "arrow-left-bold-circle"
         text: "back"
         md_bg_color: app.theme_cls.primary_dark
-        font_name: "Georgia"
+       
         icon_size: "64sp"
         pos_hint: {"center_x": 0.85, "center_y": 0.05}
         on_release: root.manager.current= 'first'
@@ -202,7 +202,7 @@ Builder.load_string("""
         MDTextField:
             id:x
             max_text_length: 4
-            font_name: "Georgia"
+        
             hint_text: ' x'
             multiline: False
             helper_text: "Error"
@@ -211,7 +211,7 @@ Builder.load_string("""
             on_text: root.set_error_message(x)
         MDTextField:
             id:y
-            font_name: "Georgia"
+           
             max_text_length: 4
             hint_text: ' y'
             multiline: False
@@ -222,7 +222,7 @@ Builder.load_string("""
 
         MDTextField:
             id:vx
-            font_name: "Georgia"
+            
             max_text_length: 8
             hint_text: ' vx'
             multiline: False
@@ -232,7 +232,7 @@ Builder.load_string("""
             on_text: root.set_error_message(vx)
         MDTextField:
             id:vy
-            font_name: "Georgia"
+            
             max_text_length: 8
             hint_text: ' vy'
             multiline: False
@@ -242,7 +242,7 @@ Builder.load_string("""
             on_text: root.set_error_message(vy)
         MDTextField:
             id:m
-            font_name: "Georgia"
+            
             max_text_length: 10
             hint_text: ' m'
             multiline: False
@@ -252,7 +252,7 @@ Builder.load_string("""
             on_text: root.set_error_message_m(m)
         MDTextField:
             id:q
-            font_name: "Georgia"
+            
             max_text_length: 5
             hint_text: ' q'
             multiline: False
@@ -312,7 +312,7 @@ Builder.load_string("""
             MDFillRoundFlatButton:
                 id:change
                 text:'Change language'
-                font_name: "Georgia"
+        
                 pos_hint: {'center_x': 0.5, 'center_y': 0.7}
                 on_release: dropdown.open(self)
             MDRelativeLayout:
@@ -372,7 +372,7 @@ Builder.load_string("""
                 size_hint: None, None
                 size: 300, 200
                 text: "back"
-                font_name: "Georgia"
+                
                 md_bg_color: app.theme_cls.primary_dark
                 icon_size: "64sp"
                 pos_hint: {"center_x": 0.5, "center_y": 0.3}
@@ -384,7 +384,7 @@ Builder.load_string("""
 
         MDTextButton:
             text: 'rus'
-            font_name: "Georgia"
+           
             size_hint:  None, None
             size:  100, 30
             on_release:
@@ -418,7 +418,7 @@ Builder.load_string("""
 
         MDTextButton:
             text: 'eng'
-            font_name: "Georgia"
+            
             size_hint:  None, None
             size:  100, 30
 
@@ -583,7 +583,7 @@ class Object(Widget):
 
     def move(self, dt, num):
         num = num-Object.num_new
-        self.interact = phys.Solver( num, Object.items[Object.num_new : Object.num +1 ])
+        self.interact = Solver( num, Object.items[Object.num_new : Object.num +1 ])
         self.coords = ((self.interact.output_coords_func()[0], self.interact.output_coords_func()[1]))
         self.pos = Vector(self.coords)
         self.ellipse.pos = self.pos
