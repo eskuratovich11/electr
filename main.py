@@ -186,4 +186,4 @@ plt.axis('equal')
 edge = 2 * 300 * 10 ** 8
 ax.set_xlim(-edge, edge)
 ax.set_ylim(-edge, edge)
-plt.show()
+ani.save('solarsys.gif')
